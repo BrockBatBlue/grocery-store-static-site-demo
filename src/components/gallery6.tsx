@@ -94,7 +94,7 @@ const Gallery6 = ({
     }
   }, [carouselApi])
   return (
-    <section className={cn('py-32 ', className)}>
+    <section className={cn('py-32 ', className)} id="departments">
       <div className="container">
         <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-16">
           <div>

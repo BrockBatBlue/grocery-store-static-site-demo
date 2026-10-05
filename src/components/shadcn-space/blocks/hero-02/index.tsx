@@ -4,11 +4,9 @@ import type { NavLinkItem } from '#/components/shadcn-space/blocks/hero-02/navba
 
 const Hero02Page = () => {
   const navData: NavLinkItem[] = [
-    { name: 'Home', href: '#', isActive: true },
-    { name: 'Properties', href: '#', isActive: false },
-    { name: 'Blog', href: '#', isActive: false },
-    { name: 'Contact', href: '#', isActive: false },
-    { name: 'Docs', href: '#', isActive: false },
+    { name: 'Contact', href: '/#contact', isActive: true },
+    { name: 'Store Departments', href: '/#departments', isActive: false },
+    { name: 'Testimonials', href: '/#testimonials', isActive: false },
   ]
   return (
     <>

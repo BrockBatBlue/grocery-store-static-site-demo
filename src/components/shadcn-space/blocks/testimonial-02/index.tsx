@@ -38,7 +38,7 @@ const defaultTestimonials: Testimonial[] = [
 
 export default function Testimonial01() {
   return (
-    <main>
+    <main id="testimonials">
       <Testimonial01Inner testimonials={defaultTestimonials} />
     </main>
   )

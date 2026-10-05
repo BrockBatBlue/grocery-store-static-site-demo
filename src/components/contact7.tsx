@@ -1,43 +1,43 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { cn } from "cn";
+import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
+import { cn } from 'cn'
 
 interface Contact7Props {
-  title?: string;
-  description?: string;
-  emailLabel?: string;
-  emailDescription?: string;
-  email?: string;
-  officeLabel?: string;
-  officeDescription?: string;
-  officeAddress?: string;
-  phoneLabel?: string;
-  phoneDescription?: string;
-  phone?: string;
-  chatLabel?: string;
-  chatDescription?: string;
-  chatLink?: string;
-  className?: string;
+  title?: string
+  description?: string
+  emailLabel?: string
+  emailDescription?: string
+  email?: string
+  officeLabel?: string
+  officeDescription?: string
+  officeAddress?: string
+  phoneLabel?: string
+  phoneDescription?: string
+  phone?: string
+  chatLabel?: string
+  chatDescription?: string
+  chatLink?: string
+  className?: string
 }
 
 const Contact7 = ({
-  title = "Contact Us",
-  description = "Have a question or need assistance? Reach out through any of the channels below.",
-  emailLabel = "Email",
-  emailDescription = "We respond to all emails within 24 hours.",
-  email = "hello@example.com",
-  officeLabel = "Office",
-  officeDescription = "Drop by our office for a chat.",
-  officeAddress = "1 Eagle St, Brisbane, QLD, 4000",
-  phoneLabel = "Phone",
+  title = 'Contact Us',
+  description = 'Have a question or need assistance? Reach out through any of the channels below.',
+  emailLabel = 'Email',
+  emailDescription = 'We respond to all emails within 24 hours.',
+  email = 'hello@example.com',
+  officeLabel = 'Office',
+  officeDescription = 'Drop by our office for a chat.',
+  officeAddress = '1 Eagle St, Brisbane, QLD, 4000',
+  phoneLabel = 'Phone',
   phoneDescription = "We're available Mon-Fri, 9am-5pm.",
-  phone = "(123) 456-7890",
-  chatLabel = "Live Chat",
-  chatDescription = "Get instant help from our support team.",
-  chatLink = "Start Chat",
+  phone = '(123) 456-7890',
+  chatLabel = 'Live Chat',
+  chatDescription = 'Get instant help from our support team.',
+  chatLink = 'Start Chat',
   className,
 }: Contact7Props) => {
   return (
-    <section className={cn("py-32", className)}>
+    <section id="contact" className={cn('py-32', className)}>
       <div className="container">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14">
@@ -91,7 +91,7 @@ const Contact7 = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Contact7 };
+export { Contact7 }

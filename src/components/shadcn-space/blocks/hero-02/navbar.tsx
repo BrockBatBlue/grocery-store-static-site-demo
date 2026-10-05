@@ -82,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = ({ navData }) => {
         <div
           className={`flex items-center justify-between duration-300 ${
             sticky
-              ? 'shadow-lg bg-background rounded-full p-3'
+              ? 'shadow-lg bg-[#FAD4C0] rounded-full p-3'
               : 'shadow-none px-0'
           }`}
         >

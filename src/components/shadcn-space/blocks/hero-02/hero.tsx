@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
               Our Grocery Store
             </h1>
             <div>
-              <Button className="px-6 py-3.5 bg-white border-0 text-black duration-300 hover:bg-white/80 font-medium rounded-full hover:cursor-pointer h-auto">
+              <Button className="px-6 py-3.5 bg-[#FEE9E1] border-0 text-[#FEE9E1] duration-300 hover:bg-[#FEE9E1]/80 font-medium rounded-full hover:cursor-pointer h-auto">
                 <a href="#">Download our Catalog!</a>
               </Button>
             </div>

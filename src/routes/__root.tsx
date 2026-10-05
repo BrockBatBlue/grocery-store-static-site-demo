@@ -49,7 +49,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="bg-[#FEE9E1]">
         <ClerkProvider>
           {children}
           <Footer />

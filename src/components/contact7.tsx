@@ -47,7 +47,7 @@ const Contact7 = ({
             <p className="text-muted-foreground">{description}</p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-xl bg-muted/50 p-8">
+            <div className="rounded-xl bg-[#FAD4C0] p-8">
               <Mail className="mb-4 size-5 text-muted-foreground" />
               <p className="mb-1 font-medium">{emailLabel}</p>
               <p className="mb-4 text-sm text-muted-foreground">
@@ -57,7 +57,7 @@ const Contact7 = ({
                 {email}
               </a>
             </div>
-            <div className="rounded-xl bg-muted/50 p-8">
+            <div className="rounded-xl bg-[#FAD4C0] p-8">
               <MapPin className="mb-4 size-5 text-muted-foreground" />
               <p className="mb-1 font-medium">{officeLabel}</p>
               <p className="mb-4 text-sm text-muted-foreground">
@@ -67,7 +67,7 @@ const Contact7 = ({
                 {officeAddress}
               </a>
             </div>
-            <div className="rounded-xl bg-muted/50 p-8">
+            <div className="rounded-xl bg-[#FAD4C0] p-8">
               <Phone className="mb-4 size-5 text-muted-foreground" />
               <p className="mb-1 font-medium">{phoneLabel}</p>
               <p className="mb-4 text-sm text-muted-foreground">
@@ -77,7 +77,7 @@ const Contact7 = ({
                 {phone}
               </a>
             </div>
-            <div className="rounded-xl bg-muted/50 p-8">
+            <div className="rounded-xl bg-[#FAD4C0] p-8">
               <MessageCircle className="mb-4 size-5 text-muted-foreground" />
               <p className="mb-1 font-medium">{chatLabel}</p>
               <p className="mb-4 text-sm text-muted-foreground">

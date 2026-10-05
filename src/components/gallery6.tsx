@@ -28,50 +28,47 @@ interface Gallery6Props {
 }
 
 const Gallery6 = ({
-  heading = 'Gallery',
+  heading = 'What you will find at our store',
   demoUrl = 'https://www.shadcnblocks.com',
   items = [
     {
       id: 'item-1',
-      title: 'Build Modern UIs',
+      title: 'Fresh Produce',
       summary:
-        'Create stunning user interfaces with our comprehensive design system.',
+        'Fresh produce from local farmers and suppliers, including fruits, vegetables, and herbs.',
       url: '#',
-      image:
-        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape1.jpeg',
+      image: '../../public/images/product-section.png',
     },
     {
       id: 'item-2',
-      title: 'Computer Vision Technology',
+      title: 'Meat and Poultry',
       summary:
-        'Powerful image recognition and processing capabilities that allow AI systems to analyze, understand, and interpret visual information from the world.',
+        'Meat and poultry from local farmers and suppliers, including beef, pork, chicken, and turkey.',
       url: '#',
-      image:
-        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape2.jpeg',
+      image: '../../public/images/meat-poultry-section.png',
     },
     {
       id: 'item-3',
-      title: 'Machine Learning Automation',
+      title: 'Dairy Products',
       summary:
-        'Self-improving algorithms that learn from data patterns to automate complex tasks and make intelligent decisions with minimal human intervention.',
+        'Dairy products from local farmers and suppliers, including milk, cheese, and yogurt.',
       url: '#',
-      image:
-        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape3.jpeg',
+      image: '../../public/images/dairy-section.png',
     },
     {
       id: 'item-4',
-      title: 'Predictive Analytics',
+      title: 'Baked Goods',
       summary:
-        'Advanced forecasting capabilities that analyze historical data to predict future trends and outcomes, helping businesses make data-driven decisions.',
+        'Baked goods from local farmers and suppliers, including bread, cakes, and cookies.',
       url: '#',
       image:
         'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape4.jpeg',
     },
     {
       id: 'item-5',
-      title: 'Neural Network Architecture',
+      title: 'Frozen Foods',
       summary:
-        'Sophisticated AI models inspired by human brain structure, capable of solving complex problems through deep learning and pattern recognition.',
+        'Frozen foods from local farmers and suppliers, including frozen fruits, vegetables, and meats.',
       url: '#',
       image:
         'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape5.jpeg',
@@ -97,18 +94,18 @@ const Gallery6 = ({
     }
   }, [carouselApi])
   return (
-    <section className={cn('py-32', className)}>
+    <section className={cn('py-32 ', className)}>
       <div className="container">
         <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-16">
           <div>
-            <h2 className="mb-3 text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
+            <h2 className="mb-3 px-50 text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
               {heading}
             </h2>
             <a
               href={demoUrl}
-              className="group flex items-center gap-1 text-sm font-medium md:text-base lg:text-lg"
+              className="group px-50 flex items-center gap-1 text-sm font-medium md:text-base lg:text-lg"
             >
-              Book a demo
+              Get our Weekly Deals Catalog
               <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
@@ -138,7 +135,7 @@ const Gallery6 = ({
           </div>
         </div>
       </div>
-      <div className="w-full max-w-full">
+      <div className="px-0 w-full max-w-full">
         <Carousel
           setApi={setCarouselApi}
           opts={{
@@ -152,15 +149,15 @@ const Gallery6 = ({
         >
           <CarouselContent className="hide-scrollbar w-full max-w-full md:-mr-4 md:ml-8 2xl:mr-[max(0rem,calc(50vw-700px-1rem))] 2xl:ml-[max(8rem,calc(50vw-700px+1rem))]">
             {items.map((item) => (
-              <CarouselItem key={item.id} className="ml-8 md:max-w-[452px]">
+              <CarouselItem key={item.id} className="ml-8 md:max-w-120">
                 <a
                   href={item.url}
                   className="group flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex aspect-3/2 overflow-clip rounded-xl">
+                    <div className="flex aspect-3/2 justify-center overflow-clip rounded-xl">
                       <div className="flex-1">
-                        <div className="relative h-full w-full origin-bottom transition duration-300 group-hover:scale-105">
+                        <div className="px-0 flex h-full w-full origin-bottom transition duration-300 group-hover:scale-105">
                           <img
                             src={item.image}
                             alt={item.title}

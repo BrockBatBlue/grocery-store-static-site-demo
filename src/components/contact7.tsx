@@ -21,19 +21,19 @@ interface Contact7Props {
 
 const Contact7 = ({
   title = 'Contact Us',
-  description = 'Have a question or need assistance? Reach out through any of the channels below.',
+  description = 'We would love to hear from you! Please reach out to us through any of the following methods.',
   emailLabel = 'Email',
-  emailDescription = 'We respond to all emails within 24 hours.',
+  emailDescription = 'Our team is ready to assist you with any inquiries.',
   email = 'hello@example.com',
-  officeLabel = 'Office',
-  officeDescription = 'Drop by our office for a chat.',
+  officeLabel = 'Our Store Location',
+  officeDescription = 'Visit us at our store for a personalized experience.',
   officeAddress = '1 Eagle St, Brisbane, QLD, 4000',
   phoneLabel = 'Phone',
-  phoneDescription = "We're available Mon-Fri, 9am-5pm.",
+  phoneDescription = 'Our store is open from 9am to 9pm, Sunday to Friday. Call us during these hours for assistance.',
   phone = '(123) 456-7890',
-  chatLabel = 'Live Chat',
-  chatDescription = 'Get instant help from our support team.',
-  chatLink = 'Start Chat',
+  chatLabel = 'Our Store Hours',
+  chatDescription = 'We are open 9am to 9pm, Sunday to Friday. ',
+  chatLink = 'Check out our weekly deals and promotions from our catalog',
   className,
 }: Contact7Props) => {
   return (

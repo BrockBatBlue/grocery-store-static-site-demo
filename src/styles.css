@@ -7,7 +7,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --sea-ink: #173a40;
+  --sea-ink: #64b6ac;
   --sea-ink-soft: #416166;
   --lagoon: #4fb8b2;
   --lagoon-deep: #328f97;
@@ -167,12 +167,24 @@ body {
   margin: 0;
   color: var(--sea-ink);
   font-family: var(--font-sans);
-  background-color: #FEE9E1;
+  background-color: #fee9e1;
   background:
-    radial-gradient(1100px 620px at -8% -10%, rgba(255, 255, 255, 0.22), transparent 58%),
-    radial-gradient(1050px 620px at 112% -12%, rgba(255, 255, 255, 0.14), transparent 62%),
-    radial-gradient(720px 380px at 50% 115%, rgba(255, 255, 255, 0.12), transparent 68%),
-    linear-gradient(180deg, #FEE9E1 0%, #FEE9E1 100%);
+    radial-gradient(
+      1100px 620px at -8% -10%,
+      rgba(255, 255, 255, 0.22),
+      transparent 58%
+    ),
+    radial-gradient(
+      1050px 620px at 112% -12%,
+      rgba(255, 255, 255, 0.14),
+      transparent 62%
+    ),
+    radial-gradient(
+      720px 380px at 50% 115%,
+      rgba(255, 255, 255, 0.12),
+      transparent 68%
+    ),
+    linear-gradient(180deg, #fee9e1 0%, #fee9e1 100%);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,8 +198,16 @@ body::before {
   z-index: -1;
   opacity: 0.28;
   background:
-    radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.8), transparent 34%),
-    radial-gradient(circle at 78% 26%, rgba(79, 184, 178, 0.2), transparent 42%),
+    radial-gradient(
+      circle at 20% 15%,
+      rgba(255, 255, 255, 0.8),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 78% 26%,
+      rgba(79, 184, 178, 0.2),
+      transparent 42%
+    ),
     radial-gradient(circle at 42% 82%, rgba(47, 106, 74, 0.14), transparent 36%);
 }
 
@@ -206,14 +226,14 @@ body::after {
 }
 
 a {
-  color: var(--lagoon-deep);
-  text-decoration-color: rgba(50, 143, 151, 0.4);
+  color: #412234;
+  text-decoration-color: rgba(65, 34, 52, 0.45);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 a:hover {
-  color: #246f76;
+  color: #412234;
 }
 
 code {
@@ -247,6 +267,7 @@ pre code {
 
 .display-title {
   font-family: 'Fraunces', Georgia, serif;
+  color: #64b6ac;
 }
 
 .island-shell {
@@ -260,7 +281,11 @@ pre code {
 }
 
 .feature-card {
-  background: linear-gradient(165deg, color-mix(in oklab, var(--surface-strong) 93%, white 7%), var(--surface));
+  background: linear-gradient(
+    165deg,
+    color-mix(in oklab, var(--surface-strong) 93%, white 7%),
+    var(--surface)
+  );
   box-shadow:
     0 1px 0 var(--inset-glint) inset,
     0 18px 34px rgba(30, 90, 72, 0.1),
@@ -275,7 +300,10 @@ pre code {
 button,
 .island-shell,
 a {
-  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease,
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease,
     transform 180ms ease;
 }
 
@@ -284,7 +312,7 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.69rem;
-  color: var(--kicker);
+  color: #64b6ac;
 }
 
 .nav-link {

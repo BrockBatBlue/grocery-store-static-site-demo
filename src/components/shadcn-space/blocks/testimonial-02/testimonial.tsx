@@ -27,19 +27,43 @@ export interface Testimonial01Props {
 const defaultTestimonials: Testimonial[] = [
   {
     quote:
-      'Shadcn Space replaced messy UI kits and half-baked templates. Today our dashboards look premium, scale beautifully, and our team focuses on real features instead of design debt.',
-    author: 'Walter Dutcher',
-    role: 'CEO',
+      'I love finding fresh fruits and vegetables here. The staff is always friendly, and I can count on the quality every time I shop.',
+    author: 'María González',
+    role: 'Loyal customer',
     image:
-      'https://images.shadcnspace.com/assets/profiles/testimonial-user.png',
+      'https://images.pexels.com/photos/8422701/pexels-photo-8422701.jpeg?auto=compress&cs=tinysrgb&w=1000',
   },
   {
     quote:
-      'Shadcn Space replaced messy UI kits and half-baked templates. Today our dashboards look premium, scale beautifully, and our team focuses on real features instead of design debt.',
-    author: 'Walter Dutcher',
-    role: 'CEO',
+      'The meat and poultry selection is excellent, and the prices are fair. This has become my go-to grocery store for the whole family.',
+    author: 'Carlos Rodríguez',
+    role: 'Local customer',
     image:
-      'https://images.shadcnspace.com/assets/profiles/testimonial-user-2.png',
+      'https://images.pexels.com/photos/14349176/pexels-photo-14349176.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  },
+  {
+    quote:
+      'I can find everything I need in one place, from fresh produce to baked goods. Shopping here is convenient and welcoming.',
+    author: 'Ana Martínez',
+    role: 'Regular customer',
+    image:
+      'https://images.pexels.com/photos/4177735/pexels-photo-4177735.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  },
+  {
+    quote:
+      'The store is clean, well stocked, and has a great selection of dairy and frozen foods. I always enjoy stopping by.',
+    author: 'José Hernández',
+    role: 'Local customer',
+    image:
+      'https://images.pexels.com/photos/8422670/pexels-photo-8422670.jpeg?auto=compress&cs=tinysrgb&w=1000',
+  },
+  {
+    quote:
+      'The fresh bread and helpful service make this grocery store special. It is a pleasure to shop here each week.',
+    author: 'Lucía Fernández',
+    role: 'Regular customer',
+    image:
+      'https://images.unsplash.com/photo-1770739318724-f7b285d8620b?auto=format&fit=crop&w=1000&q=80',
   },
 ]
 
@@ -105,13 +129,11 @@ export default function Testimonial01({
                         </div>
                       </div>
                       <div className="md:col-span-4 col-span-12">
-                        <div className="rounded-xl overflow-hidden">
+                        <div className="aspect-square overflow-hidden rounded-xl">
                           <img
                             src={testimonial.image}
                             alt={testimonial.author}
-                            width={500}
-                            height={500}
-                            className="w-full h-full object-cover"
+                            className="block h-full w-full object-cover"
                           />
                         </div>
                       </div>

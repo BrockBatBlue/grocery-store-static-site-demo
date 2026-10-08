@@ -62,7 +62,7 @@ const Gallery6 = ({
         'Baked goods from local farmers and suppliers, including bread, cakes, and cookies.',
       url: '#',
       image:
-        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape4.jpeg',
+        'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80',
     },
     {
       id: 'item-5',
@@ -71,7 +71,7 @@ const Gallery6 = ({
         'Frozen foods from local farmers and suppliers, including frozen fruits, vegetables, and meats.',
       url: '#',
       image:
-        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape5.jpeg',
+        'https://images.unsplash.com/photo-1601599964574-cddabfa36549?auto=format&fit=crop&w=1200&q=80',
     },
   ],
   className,

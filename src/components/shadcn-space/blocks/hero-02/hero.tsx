@@ -7,9 +7,13 @@ const HeroSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null)
 
   return (
-    <section ref={sectionRef}>
-      <div className="bg-[url(../../public/images/fresh-produce-no-sign.png)]  bg-center bg-no-repeat overflow-hidden relative flex flex-col xl:h-screen justify-center z-10 xl:gap-0 gap-12">
-        <div className="max-w-7xl mx-auto sm:px-16 px-4 w-full xl:pt-0 pt-32">
+    <section
+      ref={sectionRef}
+      className="relative left-1/2 -ml-[50vw] w-screen overflow-hidden h-180"
+    >
+      <div className="absolute inset-0 z-0 bg-[url(../../public/images/fresh-produce-no-sign.png)] bg-cover bg-center bg-no-repeat" />
+      <div className="relative z-10 flex flex-col justify-center gap-12 xl:gap-0 py-20 sm:py-24 xl:py-32">
+        <div className="max-w-7xl mx-auto sm:px-16 px-4 w-full">
           <div className="relative text-white text-start z-30">
             <h1 className="text-inherit text-5xl! md:text-6xl! lg:text-7xl! font-normal! max-w-160 mt-2 mb-6 bg-black/30 px-4 py-2 rounded-lg">
               Our Grocery Store
